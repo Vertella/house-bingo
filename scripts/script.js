@@ -2,7 +2,7 @@ const parent = document.getElementById('bingo-card');
 const bingoCard = document.createDocumentFragment();
 
 
-fetch('.prompts.json')
+fetch('prompts.json')
   .then((response) => {
     return response.json();
   })
