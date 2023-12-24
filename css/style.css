@@ -1,0 +1,98 @@
+body {
+    background-image: url("../images/hospital.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium';
+    overflow: hidden;
+}
+
+.img-text {
+    color: lightskyblue;
+    border:2px white;
+    margin: 1%;
+    font-size: calc(120px + 0.5vw);
+}
+
+h1 {
+    font-size: calc(100px + 0.5vw);
+    font-family: serif;
+}
+
+#bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 5px;
+}
+
+.bingo-cell {
+    max-width: 200px;
+    background-size: 100%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bingo-text {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px white;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.bingo-cell:hover {
+    transform: scale(1.1);
+}
+
+.bingo-cell-marked {
+    background-image: url("../images/steto.png");
+    
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+    .img-text, .img-shadow {
+        font-size: 60px;
+    }
+
+    .bingo-card {
+        width: 90%;
+        min-width: 300px;
+    }
+
+    .bingo-cell {
+        min-width: 50px;
+    }
+
+    .bingo-text {
+        font-size: 11px;
+        max-width: fit-content;
+    }
+
+}
