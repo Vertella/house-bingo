@@ -7,7 +7,7 @@ fetch('prompts.json')
     return response.json();
   })
   .then((data) => {
-    let bingoText = data.record.bingotext.prompts;
+    let bingoText = data.bingotext.prompts;
     bingoText = shuffleshufflebingo(bingoText);
 
     i=0;
