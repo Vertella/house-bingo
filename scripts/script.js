@@ -2,12 +2,12 @@ const parent = document.getElementById('bingo-card');
 const bingoCard = document.createDocumentFragment();
 
 
-fetch('prompts.json')
+fetch('https://api.jsonbin.io/v3/b/658b20dd1f5677401f13a88d')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    let bingoText = data.bingotext.prompts;
+    let bingoText = data.record.bingotext.prompts;
     bingoText = shuffleshufflebingo(bingoText);
 
     i=0;
