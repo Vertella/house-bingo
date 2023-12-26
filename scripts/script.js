@@ -20,7 +20,7 @@ fetch('https://api.jsonbin.io/v3/b/658b2557266cfc3fde6ea608')
 
       let bingoTextBox = document.createElement('p');
       bingoTextBox.classList.add("bingo-text");
-      bingoTextBox.addEventListener('click', () => toggleCell(bingoCon));
+      bingoCon.addEventListener('click', () => toggleCell(bingoCon));
 
       if (i == 12) {
         let textNode = document.createTextNode('Free Space');
