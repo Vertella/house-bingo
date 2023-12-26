@@ -20,7 +20,7 @@ body {
 
 .img-text {
     color: lightskyblue;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px 4px darkblue;
     margin: 1%;
     font-size: calc(120px + 0.5vw);
     border-style: none none solid;
