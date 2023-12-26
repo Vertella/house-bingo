@@ -2,7 +2,7 @@ const parent = document.getElementById('bingo-card');
 const bingoCard = document.createDocumentFragment();
 
 
-fetch('https://api.jsonbin.io/v3/b/658b20dd1f5677401f13a88d')
+fetch('https://api.jsonbin.io/v3/b/658b2557266cfc3fde6ea608')
   .then((response) => {
     return response.json();
   })
@@ -13,6 +13,7 @@ fetch('https://api.jsonbin.io/v3/b/658b20dd1f5677401f13a88d')
     i=0;
     bingoText.slice(0, 25).forEach(function (bingogay) {
       let bingoPrompt = bingogay;
+
 
       let bingoCon = document.createElement('div');
       bingoCon.classList.add("bingo-cell");
