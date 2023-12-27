@@ -78,6 +78,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-image: url("../images/hospital-mobile.png");
+    }
+    
     .topbar {
         width: 100%;
         height: 20%;
@@ -90,7 +94,6 @@ h1 {
     }
 
     .bingo-card {
-        width: 90%;
         min-width: 300px;
     }
 
