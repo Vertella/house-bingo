@@ -5,7 +5,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
 }
 
 .topbar {
@@ -40,6 +42,7 @@ h1 {
 
 .bingo-cell {
     max-width: 200px;
+    width: 10vw;
     background-size: 100%;
     padding: 4px;
     display: flex;
@@ -65,7 +68,7 @@ h1 {
     text-shadow: 2px 2px 1px lightskyblue;
     cursor: pointer;
     padding: 4px;
-    font-size: clamp(10px, 2.5vw, 30px);
+    font-size: clamp(10px, 1.5vw, 30px);
 }
 
 .bingo-cell:hover {
