@@ -38,10 +38,12 @@ h1 {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .bingo-cell {
-    max-width: 200px;
+    max-width: 180px;
     width: 10vw;
     background-size: 100%;
     padding: 4px;
